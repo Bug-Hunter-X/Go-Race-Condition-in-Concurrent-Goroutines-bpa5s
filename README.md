@@ -1,0 +1,3 @@
+# Go Race Condition in Concurrent Goroutines
+
+This repository demonstrates a common race condition in Go programs that use goroutines and the `sync.WaitGroup`. The program aims to launch 10 concurrent goroutines, each printing its ID. However, due to the improper handling of loop variables within goroutines, it produces inconsistent results.  The solution demonstrates how to correctly handle such situations to prevent race conditions.
